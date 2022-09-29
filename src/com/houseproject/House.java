@@ -4,6 +4,7 @@ public class House {
 	int number;
 	String name;
 	String color;
+	float price;
 	
 	public int getNumber() {
 		return number;
@@ -29,7 +30,15 @@ public class House {
 		this.color = color;
 	}
 
+	public float getPrice() {
+		return price;
+	}
+
+	public void setPrice(float price) {
+		this.price = price;
+	}
+	
 	public String toString() {
-		return "House Number :- "+number+", House Name :- "+name+", House Color :- "+color;
+		return "House Number :- "+number+", House Name :- "+name+", House Color :- "+color+", House Price :- "+price;
 	}
 }
